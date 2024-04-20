@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chirag Makhija Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.slider-container {
+    display: flex; /* Ensure icons are displayed in a row */
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+    margin-top: 400px; /* Adjust the top margin to move the slider down */
+	margin-left: 300px;
+}
+
+.icon {
+    margin: 0 10px; /* Add margin between icons */
+}
+
+.icon img {
+    width: 50px; /* Set the width of the icons */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is a block element */
+}
+
+/* Style for navigation arrows (if using) */
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    background-color: #333; /* Adjust color as needed */
+    color: #fff; /* Adjust color as needed */
+    border-radius: 50%; /* Make rounded */
+    text-align: center;
+    line-height: 30px; /* Center text vertically */
+    cursor: pointer;
+}
+
+.owl-prev {
+    left: 10px; /* Adjust position as needed */
+}
+
+.owl-next {
+    right: 10px; /* Adjust position as needed */
+}
+
+</style>
+<script lang="javascript">
+	$('.slider-container').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
+
+</script>
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Chirag Makhija</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img">
+
+					<ul class="contact-list">
+						<li><a href="mailto:chiragmakhija12.cm@gmail.com"><i class="fas fa-envelope"></i> Email: chiragmakhija12.cm@gmail.com</a></li>
+						<li><a href="tel:+919079489297"><i class="fas fa-phone"></i> Mobile No.: +91 9079489297</a></li>
+						<li><a href="https://www.linkedin.com/in/chirag-makhija-231178197/"><i class="fab fa-linkedin"></i> LinkedIn: Chirag Makhija</a></li>
+						<li><a href="https://github.com/CM2601"><i class="fab fa-github"></i> GitHub: Chirag Makhija</a></li>
+						<li><a href="https://twitter.com/ChiragMakhija26"><i class="fab fa-twitter"></i> Twitter: Chirag Makhija</a></li>
+					  </ul>
+  
+					
+
+
+
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Chirag Makhija</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst  ',
+						'Power BI  ',
+						'SQL   ',
+						'Python',
+
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2> Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/chirag-makhija-231178197/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/final profile pic.jpg" class="img-fluid rounded b-shadow-a" alt="" >
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Chirag Makhija</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										
+										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
+										<p><span class="title-s">Address: </span> <span>Ahmedabad, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+									<p>Enthusiastic and detail-oriented aspiring Data Analyst, fueled by a passion for unraveling insights from data. Recently accomplished Data Science course with a robust grounding in data analysis, statistics, and programming. Thrilled at the prospect of channeling theoretical knowledge and analytical prowess into real-world scenarios, eager to bring a dynamic and energetic approach to a collaborative team. Ready to embark on an exciting journey of turning raw data into actionable intelligence!</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Computer Application</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Excel, Github, Google Analytics &amp; Web development</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Videography</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Data Science enthusiast with a BCA degree and certification in Data Science. Eager to apply analytical skills to drive impactful business outcomes. Excited about continuous learning and contributing fresh perspectives to the field.
+
+
+
+
+
+			</p></p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Projects</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">PowerBI</span>
+						<h2>Mitron Bank Credit Insights Dashboard</h2>
+						<!-- <span class="position">Merkle</span> -->
+						<p class="mt-4">Introducing the Mitron Bank Credit Insights Dashboard, developed by AtliQ Data Services for launching new credit cards. Led by analyst Peter Pandey, it analyzes a sample dataset provided by Mitron Bank. 
+							<ul>
+								<br>
+								<li>Inspired by Tony Sharma's insights, it highlights key metrics for demographic classification, spending insights, and credit card recommendations. </li>
+									<li>Peter aims to present concise insights to Mitron Bank's top management, shaping their credit card strategy effectively.</li>
+								<br><!-- <li>The dashboard, designed for ease of understanding, will be showcased alongside a brief presentation to Mr. Bashnir Rover and his team. Supported by additional research data, Peter's recommendations will shape Mitron Bank's credit card strategy effectively.</li> -->
+								 <li>The dashboard, designed for ease of understanding, will be showcased alongside a brief presentation to Mr. Bashnir Rover and his team. Supported by additional research data, Peter's recommendations will shape Mitron Bank's credit card strategy effectively.</li> 
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Power BI</span>
+						<h2>Hospitality Insights Power BI Dashboard</h2>
+						<!-- <span class="position">iQuanti</span> -->
+						<p class="mt-4">Introducing the Hospitality Management Power BI Dashboard, meticulously crafted to provide comprehensive insights into key metrics for the hospitality industry. 
+							<ul>
+								<li>Utilizing Week-on-Week (WoW) analysis, the dashboard tracks changes in various performance indicators, including Revenue, Occupancy, ADR (Average Daily Rate), RevPAR (Revenue Per Available Room), Realization, and DSRN (Daily Sellable Room Nights).</li>
+								<li>The dashboard incorporates complex calculations to derive WoW change percentages for each metric, enabling stakeholders to monitor trends and identify areas for improvement effectively.</li>
+								<li>With detailed breakdowns of formulae and intuitive visualizations, this dashboard empowers hospitality managers to make data-driven decisions and optimize business performance.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Tableau</span>
+						<h2>Sales Dashboard</h2>
+						<!-- <span class="position">iQuanti</span> -->
+						<p class="mt-4">
+							Introducing the Tableau Sales Dashboard Insights, a comprehensive tool designed to provide actionable insights for sales optimization. 
+							<ul>
+								<li>This dashboard highlights key observations such as top-selling subcategories, sales trends, and year-over-year growth. Specific insights delve into the performance of individual subcategories, identifying areas for further analysis and improvement.</li>
+								<li>Additional considerations emphasize the importance of profitability analysis, inventory management, and customer targeting for informed decision-making.</li>
+								<li>Potential problem statements outline actionable steps to address challenges such as optimizing inventory management, analyzing declining sales, identifying profitability sweet spots, leveraging seasonality, and refining customer targeting strategies.</li>
+								<li>With the Tableau Sales Dashboard Insights, businesses can uncover hidden opportunities, refine their sales strategies, and maximize profitability in a competitive market landscape.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">SQL</span>
+						<h2>Blinkit Grocery Sales Analysis: Uncovering Insights with SQL</h2>
+						<!-- <span class="position">iQuanti</span> -->
+						<p class="mt-4">
+							Introducing the Blinkit Grocery Sales Analysis with SQL, a robust exploration into sales data designed to optimize operations and drive growth for online grocery retail.
+							<ul>
+								<br>
+								
+								<li>This project leverages the power of SQL queries to uncover valuable insights into sales trends, customer behavior, and product performance within Blinkit's online grocery platform.</li>
+								<li>By delving into essential metrics such as item sales, product categories, outlet performance, and customer preferences, this analysis provides a comprehensive view of Blinkit's sales landscape.</li>
+								<li>Through meticulous data analysis and strategic interpretation, stakeholders can identify opportunities for increasing sales, refining product offerings, and enhancing customer satisfaction, ultimately fostering growth and success in the competitive online grocery market.</li>
+								
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">September,2023-May,2024</span>
+    					<h2>Data Science course</h2>
+    					<span class="position">Fingertips</span>
+						<p class="mt-4">Grade: First class distinction.</p>
+    				</div>	
+    			</div>
+				
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2023</span>
+    					<h2>Bachelor of Computer Application</h2>
+    					<span class="position">MohanLal Sukhadia University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2020</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Central Academy School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">November,2021-March,2023</span>
+    					<h2>Diploma In Software Engineering</h2>
+    					<span class="position">Vidhya Institute Of Technology</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+				
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on Power BI, Tableau, SQL, Python & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/CM2601/PowerBi_Banking_project/blob/main/PowerBI_Banking_Domain.png" class="block-20 zoom-effect" style="background-image: url('images/PowerBI_Banking_Domain.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/CM2601/PowerBi_Banking_project/blob/main/PowerBI_Banking_Domain.png">Banking Domain Data Analysis using power BI</a></h3>
+                <p>Designed a Power Bi dashboard for Mitron bank To analyze the Credit card Customer insights</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/CM2601/PowerBi_Hospitality_project/blob/main/PowerBI_Hospitality.png" class="block-20 zoom-effect" style="background-image: url('images/PowerBI_Hospitality.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/CM2601/PowerBi_Hospitality_project/blob/main/PowerBI_Hospitality.png">Hospitality Management Data Analysis using power BI</a></h3>
+                <p>Designed a Power Bi dashboard for Hotel Industry To analyze the Analyzed factors contributing to low revenue across various cities	</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://public.tableau.com/app/profile/chirag.makhija/viz/SalesDashboard_17098266834650/Salesdashboard" class="block-20 zoom-effect" style="background-image: url('images/Tableau_Sales.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://public.tableau.com/app/profile/chirag.makhija/viz/SalesDashboard_17098266834650/Salesdashboard">Tableau Sales dashboard Project </a></h3>
+                <p>Designed a Tableau Sales Dashboard to track and analyze the sales and profit data acorss United States.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://public.tableau.com/app/profile/chirag.makhija/viz/AtliQSalesInsights_17095505894580/Dashboard1" class="block-20 zoom-effect" style="background-image: url('images/Tableau_Sales_India.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://public.tableau.com/app/profile/chirag.makhija/viz/AtliQSalesInsights_17095505894580/Dashboard1">Tableau Sales dashboard Project</a></h3>
+				  <p>Designed a Tableau Sales Dashboard for AtliQ to track and analyze the sales and profit data acorss India</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/CM2601/SQL_CarData_Project/blob/main/SQL_CarData_project.sql" class="block-20 zoom-effect" style="background-image: url('images/cars.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/CM2601/SQL_CarData_Project/blob/main/SQL_CarData_project.sql">Car Selling Data Analysis Using SQL</a></h3>
+				  <p>Analyzed Car Sales Data using advanced SQL queries to identify gaps and increase the Business growth</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <!-- <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/CM2601" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Ahmedabad, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 9079489297</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">chiragmakhija12.cm@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div> -->
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/chirag-makhija-231178197/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/ChiragMakhija26"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://github.com/CM2601"><span class="icon-github"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/chirag_makhiija?igsh=NjU2M21vM3YwYnoy"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
